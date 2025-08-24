@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+     background: repeating-linear-gradient(to top,blue,black,navy 10%);
+}
+main{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+    color: blue;
+}
+.container{
+    display: flex;
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 70vw;
+    height: 70vh;
+}
+.box2{
+    width:30vw;
+    height: 50vh;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    background-color: wheat;
+}
+.box2:hover{
+    box-shadow: 5px 5px 5px 10px yellow;
+}
+.box2 input{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.box2 input[type="submit"]{
+    background-color: orangered;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+h1{
+    color: aliceblue;
+    font-weight: bold;
+}
+#user{
+    margin-top: 40px;
+}
+.box1 span{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    color: black;
+}
+#k{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30px;
+}
+#m,#c{
+    position: relative;
+    color: white;
+    font-size: 20px;
+    top: 30px;
+    right: 40px;
+}
+em{
+    color: aliceblue;
+}
+a{
+    color: red;
+}
