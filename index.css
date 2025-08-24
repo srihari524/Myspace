@@ -1,0 +1,125 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background: repeating-linear-gradient(to top, blue, black,navy 5%);
+   font-family: 'Courier New', Courier, monospace;
+}
+header {
+  position: fixed;
+  background-color: black;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  gap: 30%;
+  width: 100%;
+  position: absolute;
+  height: 10vh;
+  box-shadow: 5px 0px 5px 5px white;
+}
+header h1 {
+  color: aliceblue;
+  margin-left: 30px;
+  padding: 5px;
+}
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+  transition: 1s;
+  height: 40px;
+  width: 90px;
+  text-align: center;
+  border-bottom: 2px solid white;
+  animation-name: borderchange;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes borderchange{
+   0%{
+    border-bottom: 2px solid pink;
+   }
+   50%{
+    border-bottom: 2px solid yellow;
+   }
+   100%{
+    border-bottom: 2px solid blue;
+   }
+}
+h1{
+  position: sticky;
+  animation-name: change;
+  animation-duration: 7s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  transition: 2s;
+}
+@keyframes change {
+  0%{
+    border-bottom: 4px solid blue;
+  }
+  50%{
+    border-left: 4px solid navy;
+  }
+  75%{
+    border-top: 4px solid navy;
+  }
+  100%{
+    border-right: 4px solid navy;
+  }
+}
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: aliceblue;
+}
+#menu {
+  display: none;
+}
+@media screen and (width<768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background:linear-gradient(to bottom,navy,black);
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 40%;
+  }
+  h1 {
+    display: none;
+  }
+  #menu:checked + label + .nav-links {
+    display: flex;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+i {
+  font-size: 25px;
+}
+iframe {
+  margin-top: 70px;
+  background: transparent;
+}
+footer {
+  background-color: black;
+  position: sticky;
+  height: 5vh;
+}
+footer p {
+  font-size: 20px;
+  color: aliceblue;
+  text-align: center;
+}
